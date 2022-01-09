@@ -1,0 +1,88 @@
+body {
+  font-style: normal;
+  color: aliceblue;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(184, 124, 149) 35%
+  );
+  font-family: Arial, Helvetica, sans-serif;
+}
+form {
+  margin-top: 10vh;
+
+  display: flex;
+  justify-content: center;
+}
+input[type="text"] {
+  height: 30px;
+  background-color: rgba(255, 194, 220, 0.719);
+}
+
+.search_btn {
+  width: 7vw;
+  cursor: pointer;
+  background-color: rgb(206, 206, 206);
+}
+
+img {
+  width: 80px;
+}
+.weather_description {
+  font-size: 1rem;
+}
+.current_temp {
+  text-align: center;
+  font-size: 2.7rem;
+  border: 1px solid;
+  border-radius: 0 35px;
+  box-shadow: 1px 1px rgb(255, 47, 168);
+  width: 40vw;
+  margin-left: 28vw;
+}
+.alert_message {
+  font-size: small;
+  width: 15vw;
+  text-align: center;
+  margin-left: 41vw;
+}
+.sun_rise_set {
+  font-size: small;
+  padding-left: 1px;
+}
+.daily_forcast {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-content: center;
+  height: 40vh;
+}
+h3 {
+  text-align: center;
+  padding: 15px;
+}
+.daily_day_temp:hover {
+  background-color: rgb(221, 255, 127);
+  color: black;
+}
+.daily_day_temp {
+  font-size: 1.5rem;
+  border: 1px solid;
+  padding: 15px;
+  text-align: center;
+}
+.hourly_forcast {
+  justify-content: center;
+}
+.hourly_forcast_time {
+}
+table {
+  text-align: center;
+
+  margin-left: 25vw;
+}
+td,
+th {
+  border: 1px solid;
+  border-collapse: collapse;
+}
