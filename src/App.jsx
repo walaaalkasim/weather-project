@@ -9,14 +9,17 @@ const App = () => {
   const { loading, data, dataCity } = context;
   return (
     <main>
-      {<CityData />}
+      {!loading && data && data.length > 0 && <CityData />}
       <CitySearch />
-
-      {<CityWeather />}
-      {/* {!loading && data && data.length > 0 && <CityData />}
+      // {<CityWeather />}
+      {/*   {!loading && data && data.length > 0 && <CityData />}
+      {/* {<CityData />}
       <CitySearch />
-
-      {dataCity && dataCity.length > 0 && data.length > 0 && <CityWeather />} */}
+      {!loading &&
+        data &&
+        dataCity &&
+        dataCity.length > 0 &&
+        data.length > 0 && <CityWeather />} */}
     </main>
   );
 };

@@ -37,7 +37,7 @@ const CitySearch = () => {
         onChange={(e) => handleChangeState(e)}
       />
       <button className="search_btn" onClick={(e) => handleSubmit(e)}>
-        <BsSearch />
+        search
       </button>
     </form>
   );

@@ -10,6 +10,9 @@ const convertTimeto24 = (time12h) => {
   if (modifier === "PM") {
     hours = parseInt(hours, 10) + 12;
   }
+  if (modifier === "AM" && hours !== ("00" || "10" || "11")) {
+    hours = "0" + hours;
+  }
 
   return `${hours}:${minutes}`;
 };

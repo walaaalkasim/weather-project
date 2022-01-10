@@ -12,7 +12,7 @@ const MyProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [search, setSearch] = useState("Remscheid");
-  const [searchCountry, setSearchCountry] = useState("");
+  const [searchCountry, setSearchCountry] = useState("de");
   const [searchState, setSearchState] = useState("");
   const [latitude, setLatitude] = useState("");
   const [longitude, setLongitude] = useState("");
