@@ -1,25 +1,17 @@
 import { useContext } from "react";
 import "./App.css";
 import MyContext from "./context/MyContext";
-import CityData from "./components/CityData";
+
 import CityWeather from "./components/CityWeather";
 import CitySearch from "./components/CitySearch";
 const App = () => {
   const context = useContext(MyContext);
-  const { loading, data, dataCity } = context;
+  const { data, dataCity } = context;
   return (
     <main>
-      {!loading && data && data.length > 0 && <CityData />}
       <CitySearch />
-      // {<CityWeather />}
-      {/*   {!loading && data && data.length > 0 && <CityData />}
-      {/* {<CityData />}
-      <CitySearch />
-      {!loading &&
-        data &&
-        dataCity &&
-        dataCity.length > 0 &&
-        data.length > 0 && <CityWeather />} */}
+
+      {!dataCity.loading && <CityWeather />}
     </main>
   );
 };
