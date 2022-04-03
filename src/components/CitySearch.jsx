@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import MyContext from "../context/MyContext";
-import { BsSearch } from "react-icons/bs";
 
 const CitySearch = () => {
   const context = useContext(MyContext);
@@ -30,7 +29,7 @@ const CitySearch = () => {
         onChange={(e) => handleChangeCode(e)}
       />
       <input
-        placeholder="State Code , only for USA e.x: NY"
+        placeholder="State,only USA e.x:NY"
         type="text"
         maxLength="20"
         value={inputState}
