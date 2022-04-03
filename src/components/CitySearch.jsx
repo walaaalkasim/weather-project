@@ -16,21 +16,21 @@ const CitySearch = () => {
   return (
     <form>
       <input
-        placeholder="city"
+        placeholder="City , e.x: Amman"
         type="text"
         maxLength="20"
         value={input}
         onChange={(e) => handleChange(e)}
       />
       <input
-        placeholder="country"
+        placeholder="Country Code , e.x: JO"
         type="text"
         maxLength="20"
         value={inputCode}
         onChange={(e) => handleChangeCode(e)}
       />
       <input
-        placeholder="state"
+        placeholder="State Code , only for USA e.x: NY"
         type="text"
         maxLength="20"
         value={inputState}

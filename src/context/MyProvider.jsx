@@ -58,7 +58,7 @@ const MyProvider = ({ children }) => {
       setLatitude(data.results[0].lat);
     }
   }, [data]);
-
+  console.log(data);
   useEffect(() => {
     if (latitude && longitude) {
       fetch(
@@ -73,7 +73,7 @@ const MyProvider = ({ children }) => {
           setDataCity({ results: null, loading: false, error: err })
         );
     }
-  }, [latitude, longitude]);
+  }, [latitude, longitude, API_KEY]);
 
   return (
     <MyContext.Provider
