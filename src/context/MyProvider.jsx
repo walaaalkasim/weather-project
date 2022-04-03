@@ -26,7 +26,7 @@ const MyProvider = ({ children }) => {
 
   const API_KEY = process.env.REACT_APP_API_KEY;
 
-  const URI = `http://api.openweathermap.org/geo/1.0/direct?q=${search},${searchState},${searchCountry}&limit=10&appid=${API_KEY}`;
+  const URI = `https://api.openweathermap.org/geo/1.0/direct?q=${search},${searchState},${searchCountry}&limit=10&appid=${API_KEY}`;
 
   const handleChange = (e) => {
     setInput(e.target.value);
